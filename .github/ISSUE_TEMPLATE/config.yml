@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: هل قمت بالتحقق من المشاكل والحلول في مكتبة Baileys؟
+    about: يرجى مراجعة المشاكل المفتوحة والمغلقة في مستودع Baileys للتأكد مما إذا كان الخطأ ناتجاً عن المكتبة الأساسية أم من السكريبت الخاص بك.
+    url: https://github.com/WhiskeySockets/Baileys/issues

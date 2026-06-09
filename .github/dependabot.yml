@@ -1,0 +1,11 @@
+# لبدء العمل مع تحديثات إصدارات Dependabot، ستحتاج إلى تحديد
+# الأنظمة البيئية للحزم المراد تحديثها ومكان تواجد ملفات Manifest الخاصة بها.
+# يرجى الاطلاع على التوثيق الرسمي لمعرفة كافة خيارات التكوين المتاحة:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "npm" # النظام البيئي للحزم المستخدمة في البوت (Node.js)
+    directory: "/" # مسار تواجد ملفات الحزم (المجلد الرئيسي للسكريبت)
+    schedule:
+      interval: "weekly" # الفاصل الزمني للفحص التلقائي (أسبوعياً)

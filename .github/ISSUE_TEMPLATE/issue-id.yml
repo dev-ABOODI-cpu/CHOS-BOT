@@ -1,0 +1,67 @@
+name: تقرير الأخطاء (إندونيسي معرب)
+title: "[خطأ برميجي] "
+description: استخدم هذا القالب للإبلاغ عن مشكلة أو خلل في النظام
+labels: [bug]
+body:
+
+  - type: input
+    id: baileys-version
+    attributes:
+      label: إصدار مكتبة Baileys
+      description: أدخل إصدار حزمة مكتبة Baileys التي تستخدمها حالياً.
+      placeholder: 1.2.3
+    validations:
+      required: true
+
+  - type: input
+    id: neoxr-wb-version
+    attributes:
+      label: إصدار @neoxr/wb
+      description: أدخل إصدار حزمة @neoxr/wb المستعملة في مشروعك.
+      placeholder: 1.2.3
+    validations:
+      required: true
+
+  - type: input
+    id: nodejs-version
+    attributes:
+      label: إصدار NodeJS
+      description: أدخل إصدار بيئة تشغيل NodeJS الحالية لديك.
+      placeholder: 1.2.3
+    validations:
+      required: true
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: نظام التشغيل (OS)
+      description: أدخل نظام تشغيل السيرفر أو البيئة المستخدمة (مثل Termux أو Ubuntu).
+      placeholder: Linux Ubuntu 22 / Termux
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: تفاصيل ومعلومات إضافية
+      description: |
+        يرجى وصف المشكلة التي تواجهها بالتفصيل. يمكنك أيضاً إرفاق سجلات الأخطاء (Logs) أو لقطات الشاشة إذا لزم الأمر.
+      placeholder: اكتب تفاصيل الخطأ البرمجي بدقة هنا...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: قائمة التحقق والموافقة
+      options:
+        - label: أنا أستخدم الإصدار الأحدث من السكريبت والمكتبات.
+        - label: لقد قمت بمراجعة التوثيق (Documentation) ولم أجد حلاً للمشكلة.
+          required: true
+        - label: لقد بحثت في البلاغات السابقة للتأكد من أن هذا الخطأ ليس مكرراً.
+          required: true
+        - label: أنا أستخدم أحدث إصدار من تطبيق الواتساب.
+        - label: لقد قمت بتقديم معلومات كافية وواضحة عن المشكلة.
+          required: true
+        - label: أنا أفهم أنه في حال عدم وضوح التقرير أو ملئه بشكل عشوائي، فقد لا يتم الرد عليه من قِبل المطور.
+          required: true

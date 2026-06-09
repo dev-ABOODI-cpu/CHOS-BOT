@@ -1,0 +1,23 @@
+name: سير عمل مراجعة الكود (Code Review Workflow)
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  code-review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: سحب الكود من المستودع (Checkout Repository)
+        uses: actions/checkout@v4
+
+      - name: إعداد بيئة تشغيل Node.js (Setup Node.js)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # تم التحديث إلى إصدار مستقر وحديث يتوافق مع ميزات البوت
+
+      - name: تثبيت الحزم والاعتماديات (Install Dependencies)
+        run: npm install
+
+      # يمكنك إضافة خطوات إضافية هنا مثل تشغيل الاختبارات البرمجية أو الفحص التلقائي.
