@@ -129,7 +129,7 @@ export const run = {
                   }
                }).join('\n')
             }
-            client.sendMessageModify(m.chat, Utils.Styles(print) + '\n\n' + `© DEV ABOODI OFFICIAL`, m, {
+            client.sendMessageModify(m.chat, Utils.Styles(print) + '\n\n' + `© 𝐃𝐄𝐕 𝐀𝐁𝐎𝐎𝐃𝐈 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋`, m, {
                largeThumb: true,
                type: 'preview-link',
                ratio: 'landscape',
@@ -252,7 +252,7 @@ export const run = {
                      return `│  ◦  ${isPrefix + command} ${v}`
                   }
                }).join('\n')
-               client.sendMessageModify(m.chat, print + '\n\n' + `© DEV ABOODI OFFICIAL`, m, {
+               client.sendMessageModify(m.chat, print + '\n\n' + `© 𝐃𝐄𝐕 𝐀𝐁𝐎𝐎𝐃𝐈 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋`, m, {
                   largeThumb: true,
                   type: 'preview-link',
                   ratio: 'landscape',
@@ -331,7 +331,7 @@ export const run = {
                client.sendIAMessage(m.chat, buttons, m, {
                   header: '',
                   content: print,
-                  footer: `© DEV ABOODI OFFICIAL`,
+                  footer: `© 𝐃𝐄𝐕 𝐀𝐁𝐎𝐎𝐃𝐈 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋`,
                   media: Utils.isUrl(setting.cover) ? setting.cover : Buffer.from(setting.cover, 'base64')
                })
             }
@@ -421,8 +421,8 @@ export const run = {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                      display_text: 'متجر الدعم الرسمي',
-                     url: 'https://shop.neoxr.eu',
-                     merchant_url: 'https://shop.neoxr.eu'
+                     url: 'https://wa.me/message/72R5BJPAHVO7G1',
+                     merchant_url: 'https://wa.me/message/72R5BJPAHVO7G1'
                   })
                }, {
                   name: 'single_select',
